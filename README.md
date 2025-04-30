@@ -1,6 +1,6 @@
 # Happiness Battle Royale 🎮
 
-**Happiness Battle Royale** is a custom game mode for [HappinessMP](https://github.com/HappinessMP) – a multiplayer platform focused on fun, strategy, and survival. This mode brings intense battle royale gameplay to a vibrant, chaotic world of GTA IV!
+**Happiness Battle Royale** is a custom game mode for [HappinessMP](https://github.com/HappinessMP) – a multiplayer platform focused on fun, strategy, and survival. This mode brings intense battle royale gameplay to the vibrant and chaotic world of GTA IV!
 
 ## 📦 About the Project
 
