@@ -13,6 +13,6 @@ This game mode is being developed as an open-source collaboration. Our goal is t
 
 ## 🛠️ Technologies Used
 
-- [HappinessMP API](https://github.com/HappinessMP)
+- [HappinessMP API]([https://github.com/HappinessMP](https://happinessmp.net/docs/server/getting-started))
 - Lua
 - Git and GitHub for version control and collaboration
