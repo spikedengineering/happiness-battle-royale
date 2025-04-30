@@ -9,7 +9,7 @@ This game mode is being developed as an open-source collaboration. Our goal is t
 ## 👥 Authors
 
 - [@patex](https://github.com/spikedengineering)
-- [@dkc](https://github.com/danilokatanic)
+- [@dkc](https://github.com/dkc13)
 
 ## 🛠️ Technologies Used
 
