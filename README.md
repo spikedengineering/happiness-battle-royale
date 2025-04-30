@@ -4,7 +4,7 @@
 
 ## 📦 About the Project
 
-This game mode is being developed as an open-source collaboration. Our goal is to provide players with a unique Battle Royale experience within the HappinessMP environment – with a focus on humor, fast-paced action, and unexpected moments.
+This game mode is being developed as an open-source collaboration. Our goal is to provide players with a (for now) simple Battle Royale experience within the HappinessMP environment – with a focus on humor, fast-paced action, and unexpected moments.
 
 ## 👥 Authors
 
