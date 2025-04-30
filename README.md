@@ -8,7 +8,7 @@ This game mode is being developed as an open-source collaboration. Our goal is t
 
 ## 👥 Authors
 
-- [@Patex](https://github.com/spikedengineering)
+- [@patex](https://github.com/spikedengineering)
 - [@dkc](https://github.com/danilokatanic)
 
 ## 🛠️ Technologies Used
