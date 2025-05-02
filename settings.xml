@@ -1,0 +1,35 @@
+<settings>
+    <!-- "::" means listen on all local IPv4 & IPv6 adapters. -->
+    <!-- WARNING: Don't change this without experience! -->
+    <hostaddress>::</hostaddress>
+
+    <!-- The hostname players will see. -->
+    <hostname>Happiness Battle Royale</hostname>
+
+    <!-- Add the server to the master list. -->
+    <listed>true</listed>
+
+    <!-- Port the server will listen on. -->
+    <port>9999</port>
+
+    <!-- Maximum number of players the server will support (max 100). -->
+    <maxplayers>32</maxplayers>
+
+    <!-- Select game episode to be used by server. -->
+    <!-- 0 = IV, 1 = TLAD, 2 = TBOGT -->
+    <episode>2</episode>
+
+    <!-- Used for encrypting client side resource files. Don't use default one! -->
+    <!-- Keep it empty to disable encryption (not recommended!) -->
+    <secret>Happy</secret>
+
+    <!-- Select log level for console and log file. -->
+    <!-- 0 = Trace, 1 = Debug, 2 = Info, 3 = Warn, 4 = Error, 5 = Critical, 6 = Off -->
+    <loglevel>2</loglevel>
+
+    <!-- Enable default chat. -->
+    <chat>true</chat>
+
+    <!-- The resources the server will load and run. -->
+    <resource>gamemode</resource>
+</settings>
