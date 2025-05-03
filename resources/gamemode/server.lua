@@ -1,6 +1,6 @@
 serverData = {
     serverStatus = 0,   -- 0 ==> waiting , 1 ==> running
-    serverPause = 90,
+    serverPause = 5,
     maxPlayers = 32,
     activePlayers = 0
 }
@@ -27,19 +27,15 @@ Events.Subscribe("timeoutCountdown", function ()
 
     Thread.Create(function () -- counting
         while true do
-            local printText
             if counter > 1 then
-                printText = "TIMEOUT: " .. counter .. " seconds left until the match begins."
-                Events.Call("serverPrintTimeout", {counter, printText})
+                Events.Call("serverPrintTimeout", {counter, "TIMEOUT: " .. counter .. " seconds left until the match begins."})
             elseif counter == 1 then
-                printText = "TIMEOUT: " .. counter .. " second left until the match begins."
-                Events.Call("serverPrintTimeout", {counter, printText})
+                Events.Call("serverPrintTimeout", {counter, "TIMEOUT: " .. counter .. " second left until the match begins."})
             elseif counter == 0 then
-                printText = "~ MATCH STARTED - " .. serverData.activePlayers .. " PLAYERS ~"
-                Events.Call("serverPrintTimeout", {counter, printText})
+                Events.Call("serverPrintTimeout", {counter, "MATCH STARTED - " .. serverData.activePlayers .. " PLAYERS"})
 
                 serverData.serverStatus = 1
-                -- call event for starting match
+                Events.Call("serverStartMatch", {})
                 return
             end
             
@@ -59,4 +55,16 @@ Events.Subscribe("serverPrintTimeout", function (timeLeft, printText)
             Events.CallRemote("clientPrintTimeout", i, {printText})
         end
     end
+end)
+
+Events.Subscribe("serverStartMatch", function ()
+    for i = 1, serverData.maxPlayers, 1 do
+        if Player.IsConnected(i) == true then
+            Events.CallRemote("clientStartMatch", i, {})
+        end
+    end
+end)
+
+Events.Subscribe("matchCountdown", function ()
+    
 end)
